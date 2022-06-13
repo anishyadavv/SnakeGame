@@ -59,9 +59,9 @@
     .buttons {
         flex-direction: column;
         position: absolute;
-        top: 78vh;
+        top: 70vh;
         align-items: center;
-        display: flex;
+        display: none;
     }
     
     .left {
@@ -78,4 +78,14 @@
     #up,
     #down {
         font-size: 50px;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #board {
+            position: absolute;
+            top: 30vw;
+        }
+        .buttons {
+            display: flex;
+        }
     }
