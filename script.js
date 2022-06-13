@@ -136,8 +136,6 @@ window.addEventListener('keydown', e => {
             inputDir.y = 0;
 
             break;
-
-
         default:
             break;
     }
@@ -152,4 +150,20 @@ document.getElementById('muted').addEventListener('click', () => {
         document.getElementById('muted').classList.remove('fa-volume-high');
         document.getElementById('muted').classList.add('fa-volume-xmark');
     }
+})
+document.getElementById('up').addEventListener('click', () => {
+    inputDir.x = 0;
+    inputDir.y = -1;
+})
+document.getElementById('left').addEventListener('click', () => {
+    inputDir.x = -1;
+    inputDir.y = 0;
+})
+document.getElementById('right').addEventListener('click', () => {
+    inputDir.x = 1;
+    inputDir.y = 0;
+})
+document.getElementById('down').addEventListener('click', () => {
+    inputDir.x = 0;
+    inputDir.y = 1;
 })
