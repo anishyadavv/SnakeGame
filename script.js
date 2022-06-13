@@ -152,18 +152,22 @@ document.getElementById('muted').addEventListener('click', () => {
     }
 })
 document.getElementById('up').addEventListener('click', () => {
+    navigator.vibrate(200);
     inputDir.x = 0;
     inputDir.y = -1;
 })
 document.getElementById('left').addEventListener('click', () => {
+    navigator.vibrate(200);
     inputDir.x = -1;
     inputDir.y = 0;
 })
 document.getElementById('right').addEventListener('click', () => {
+    navigator.vibrate(200);
     inputDir.x = 1;
     inputDir.y = 0;
 })
 document.getElementById('down').addEventListener('click', () => {
+    navigator.vibrate(200);
     inputDir.x = 0;
     inputDir.y = 1;
 })
