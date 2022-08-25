@@ -6,7 +6,7 @@ const musicSound = new Audio('music/music.mp3'); //game function
 let snakeArr = [
     { x: 13, y: 15 }
 ];
-let speed = 5;
+let speed = 10;
 let lastPaintTime = 0;
 let food = { x: 4, y: 3 }
 let score = 0;
