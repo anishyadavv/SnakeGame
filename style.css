@@ -24,12 +24,17 @@
     
     .head {
         background-color: red;
+        z-index: 1;
     }
     
     .snake {
         background-color: purple;
     }
-    
+    .eat {
+        background-color: green;
+        width: 1.2em;
+        z-index: 2;
+    }
     #scoreBox {
         position: absolute;
         top: 5px;
@@ -54,6 +59,7 @@
     
     .food {
         background-color: blue;
+        border-radius: 50%;
     }
     
     .buttons {
